@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+          
+      
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+         <!-- Website CSS style -->
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+
+          <!-- Website Font style -->
+  </head>
+  <body>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+          <link rel="stylesheet" href="cust-reg.css">
+          <!-- Google Fonts -->
+    
+          <title>Agent-Reg-Form</title>
+
+         
+
+        <div class="jumbotron text-editor" style="background-color: powderblue">
+                
+
+            <h1 style="color:darkblue" align="center"><img src="img/logo.png" id= img> Education-HUB</h1>
+            <p style="color: black"><marquee><strong></strong> AGENT REGISTRATION </marquee></p>
+
+        </div>
+    
+
+    <div class="container">
+      <div class="row main">
+        <div class="main-login main-center">
+          
+          <form class="form-group" method="post" action="ajent-reg.php">
+            
+            <div class="form-group"><!--customer name -->
+              <label for="name" class="cols-sm-2 control-label">Name</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="username" class="form-control" name="aj-nm" id="aj_name"  placeholder=" your Name" />
+                </div>
+              </div>    
+            </div>
+
+            <div class="form-group"><!-- EMAIL -->
+              <label for="email" class="cols-sm-2 control-label"> Email</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                  <input type="Email" class="form-control" name="aj-eml" id="aj_email"  placeholder=" your Email"  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group"> <!--user name -->
+              <label for="username" class="cols-sm-2 control-label">Username</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                  <input type="username" class="form-control" name="aj-usr-nm" id="aj_username"  placeholder="Enter Username" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group"> <!-- password -->
+              <label for="password" class="cols-sm-2 control-label">Password</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                  <input type="password" class="form-control" name="aj-pswd" id="aj_password"  placeholder="your Password"  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">  <!-- confirm password -->
+              <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                  <input type="password" class="form-control" name="aj-c-pswd" id="aj_confirm"  placeholder="Confirm your Password"  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-control">  <!-- Gender -->
+              <label for="gender" class="cols-sm-2 control-label">Gender</label>
+                              <div class="cols-sm-10">
+                                <input type="radio" name="aj-gender" value="male" checked> Male
+                                <input type="radio" name="aj-gender" value="female"> Female
+                                <input type="radio" name="aj-gender" value="other"> Other
+                              </div>
+              
+            </div>
+
+             
+
+
+            <div class="form-group">   <!-- address -->
+              <label for="address" class="cols-sm-2 control-label">Address</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class= "glyphicon glyphicon-book" aria-hidden="true"></i></span>
+                  <input type="Address" class="form-control" name="aj-add" id="aj_addrs"  placeholder="Enter your Address"  />
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="form-group">  <!-- District -->
+              <label for="District" class="cols-sm-2 control-label">District</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-book" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="aj-dist" id="aj_dist"  placeholder="Enter your District"  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">  <!-- District -->
+              <label for="District" class="cols-sm-2 control-label">Qualifications</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-book" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="aj-qualify" id="aj_qualify"  placeholder="Enter your qualification"  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" class="data-fv-phone-country"> <!-- mobile number -->
+              <label for="username" class="cols-sm-2 control-label">phone number</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="aj-no" id="aj_mob"  placeholder="Enter your Phone number"  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" class="data-fv-phone-country"> <!-- mobile number -->
+              <label for="username" class="cols-sm-2 control-label">Adhar Number</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="aj-adhar" id="ajnt_id"  placeholder="Enter Adhar number" required="" />
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div class="form-group " style="color: red;">  <!-- Register -->
+             <label for="Register" align="center"></label>
+                     <input type="submit" class="form-control" id="submit" value="Register">
+             </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

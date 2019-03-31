@@ -1,0 +1,162 @@
+ <?php
+ 
+    session_start();
+        if(!isset($_SESSION['frm-eml']))
+	       header('location:http://localhost/projects/login-form.html');
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+         <!-- Website CSS style -->
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<title>testform</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">EducationHub</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home-page.php">Home</a></li>
+        
+          
+          
+       
+        <li><a href="user-profile.php">profile</a></li>
+
+        <li><a href="home-page.php">Back</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="Logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<center><h3 style="color: white"> fill the form for the  <strong>online test</strong> </h3></center>
+
+
+
+
+
+
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+          <link rel="stylesheet" href="test-frm.css">
+
+
+	<div class="container">
+
+		 <div class="row main">
+
+        <div class="main-login main-center">
+        	
+
+		<form action="test-form.php" method="post">
+			<label for="text">Email</label>
+			<input type="Email" name="tusr-eml" id="ip" placeholder="Email id"><br><br>
+
+			<label for="dropdown" id="lb">Board
+			</label>
+			<select name="tboard" id="sel">
+				<option>MP</option>
+				<option>CBSE</option>
+				<option>ICSE</option>
+			</select><br><br>
+
+			<label for="dropdown" id="lb">Class
+			</label>
+			<select name="tclass" id="sel">
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+			</select><br><br>
+
+			<label for="dropdown" id="lb" >District
+			</label>
+			<select name="tdist" id="sel">
+				<option>Bhopal</option>
+				
+			</select><br>
+			
+			<center><input type="submit" name="sub"></center>
+
+		</form>
+	</div></div>
+		
+	</div>
+
+<style type="text/css">
+#ip{
+	margin: 10px;
+
+}
+#lb{
+	margin: 10px;
+	padding: 10px;
+}
+
+.container{
+ 	
+ 	
+ 	max-width: 600px;
+    padding: 10px 40px;
+	background:;
+	    color: black;
+
+    
+}
+#sel{
+	width: 40%;
+}
+.main{
+ 	margin:50px 15px;
+}
+#playground-container {
+    height: 500px;
+    overflow: hidden !important;
+}
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 10 auto;
+ 	max-width: 600px;
+    padding: 100px 40px;
+	background:#009edf;
+	    color: ;
+    text-shadow: none;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+}
+body, html{
+     height: 100%;
+ 	background-repeat: no-repeat;
+    background-image:url(img/test1.jpg);
+    background-repeat: repeat;
+
+ 	font-family: 'Oxygen', sans-serif;
+	    background-size: cover;
+        
+}
+
+
+</style>
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>School list</title>
+<link rel="stylesheet" type="text/css" href="D:\xampp\htdocs\Project\css\style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+img{
+	width: 200px;
+	height: 200px;
+}
+	h2{
+		text-align: center;
+	}
+	#btn{
+		background-color:skyblue;
+		height: 35px;
+		width: 100px;
+		
+	}
+	#btn:hover{
+		background-color: red;
+	}
+	#logo{
+			height: 65px;
+			width: 150px;
+	}
+
+<style>
+#next a {
+    color: black;
+    float: left;
+    padding: 8px 46px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+</style>
+
+</head>
+<body style="background-color: skyblue">
+<div class="container">
+
+
+
+
+		<nav class="navbar navbar-fixed-top" style="background-color: black">
+				  
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+						<span style="color: white">MENU</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+					  <ul class="nav navbar-nav menu__list">
+					  	<li><img id="logo" src="images/logo.png" width="150px" height="65px" align="left" ></li>
+						<li class="active menu__item menu__item--current"><a class="menu__link" href="index.html"><p style="color:red">HOME </p><span class="sr-only">(current)</span></a></li>
+						<li class=" menu__item"><a class="menu__link scroll" href="#about">
+							<p style="color: red">ABOUT</p></a></li>
+						<li class=" menu__item"><a class="menu__link scroll" href="#activities">
+							<p style="color: red"></p></a></li>
+						<li class=" menu__item"><a class="menu__link scroll" href="#School List">
+							<p style="color: red"></p></a></li>
+						<li class=" menu__item"><a class="menu__link scroll" href="#contact">
+							<p style="color: red"></p></a></li>
+						  <li><a href="std-reg.html"><button  class="btn btn-danger" style="float:right;">Register </button></a></li>
+					  <li><a href="login-form.html"><button class="btn btn-success" style="float:right;">Login </button></a></li>
+
+					  <li><a href="admin-frm.php"><button class="btn btn-" style="float:right;">Admin </button></a></li>
+					  </ul>  
+					
+					
+				  </div>
+				</nav>
+
+
+
+
+
+
+	<h1 class="page-title cover-wrapper" style="background-color: skyblue; text-align: center; margin-top: 100px;">Our Best School Collections</h1>
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>SAGAR PUBLIC SCHOOL</u></h2></a>
+			<p><b>Adress:Shket Nagar,Bhopal<br>
+                  E-mail:spssn@spsbhopal.ac.in<br>
+                   Contact_no:0755-2489601-02-03</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\sps-logo.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>All Saints public school</u></h2></a>
+			<p><b>Adress:Gandhi Nagar,Bhopal<br>
+                   E-mail:ascbse@gamil.com<br>
+                   Contact_no:0755-2528644</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\All Saints Logo.png" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+		<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Bal Bharti Public school</u></h2></a>
+			<p><b>Adress:Neelbad,Bhopal<br>
+                  E-mail:principalbbpchool@gamil.com<br>
+                   Contact_no:9111720810</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\bal.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>The Sanskaar Velly school</u></h2></a>
+			<p><b>Adress:Near Kerwa Dam,Chandabpura National Law University,Bhopal<br>
+                  E-mail:ascbseinfo@snskaarvelly.org<br>
+                   Contact_no:9644882048</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Capt.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Shree Bhavan's Bharti school</u></h2></a>
+			<p><b>Adress:Kerwa Dam Road,Barkhedi Kalan,Shakshi Dhaba,Bhopal<br>
+                  E-mail:sbbps.bpl@gmail.com<br>
+                   Contact_no:958440555</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Captu.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Billabong High International school</u></h2></a>
+			<p><b>Adress:Beyond Bhadbhada Neelbad,Bhopal<br>
+                  E-mail:billabonghighbhopall@gamil.com<br>
+                   Contact_no:9199142299</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Captur.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Kidzee Clay N Potter School</u></h2></a>
+			<p><b>Adress:Kolar Road,Bhopal<br>
+                  E-mail:iespublicschool@gamil.com<br>
+                   Contact_no:0755-2896240</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\kidzee.JPG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Bal Bhavan school</u></h2></a>
+			<p><b>Adress:Shyamla Hills,Bhopal<br>
+                  E-mail:balbhavan@yahoo.com<br>
+                   Contact_no:0755-4038321</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Capturej.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Anand Vihar school</u></h2></a>
+			<p><b>Adress:Tulshi Nagar,New Market,Bhopal<br>
+                  E-mail:avbbhopal@yahoo.com<br>
+                   Contact_no:0755-2553275</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Capturekj.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>World Way International school</u></h2></a>
+			<p><b>Adress:Arera Colony,Gulmohar,World Way,Bhopal<br>
+                  E-mail:wwisuggetion.03@gamil.com<br>
+                  Contact_no:9770091589</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Capturepo.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Sharda Vidhya Mandir</u></h2></a>
+			<p><b>Adress:Neelbad,Bhopal<br>
+                  E-mail:iespublicschool@gamil.com<br>
+                   Contact_no:0755-2896240</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\sharda.JPG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Delhi Public School</u></h2></a>
+			<p><b>Adress: Barkhedi kalan,Bhadbhada Road,Bhopal<br>
+                  E-mail:admin@dpsbhopal.org<br>
+                   Contact_no:0755-6611400</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Capturekj.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Mansrovar Public school</u></h2></a>
+			<p><b>Adress:Oppsite Bhima Kunj,Kolar Road,Bhopal<br>
+                  E-mail:info@mansrovarpublicschool.com<br>
+                   Contact_no:7611176333</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Capturekj.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>IES public school</u></h2></a>
+			<p><b>Adress:Neelbad,Bhopal<br>
+                  E-mail:iespublicschool@gamil.com<br>
+                   Contact_no:0755-2896240</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Capture.PNG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="panel panel-custom">
+		<div class="panel-body" style="position:relative;">
+		<div style="width:100%;  overflow:hidden; border:2px solid #bebebe;">
+		<div class="row">
+		<div class="col-sm-6">
+			<a href="#"><h2><u>Sanskar</u></h2></a>
+			<p><b>-------------<br>
+                 --------------<br>
+                   -----------------------</b></p>
+                   </div>
+                   <div class="col-sm-6">
+                   	<img src="logo\Sanskar.JPG" style="float: right">
+                   	</div>
+
+                   <button id="btn" style="float: left;"> <a href="#"><span class="aMore glyphicon glyphicon-info-sign"></span><strong>    More</strong></a></button> 	
+
+
+          
+		</div>
+		</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	
+
+<div class="pagination" id="next">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+
+
+	</div>
+</body>
+</html>

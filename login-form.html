@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- Website CSS style -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="cust-reg.css">
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+		<title>login-Form</title>
+	</head>
+	<body>
+
+		  <div class="main-center"><img src="img/logo.png" id=img><font size="10">Login Form</font>
+		  	<a href="index.html"><button class="btn btn-success" style="float:left;">Back </button></a>
+		  </div>
+		<div class="container">
+			<div class="row main">
+
+				<div class="main-login main-center">
+				  <h1 style="color: black"></h1>
+
+					<form class="" method="post" action="form-validate.php">
+						
+				           
+							<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">Email Id</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="Email" class="form-control" name="frm-eml" id="username"  placeholder="Email Id" required="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="frm-pswd" id="password"  placeholder=" Password" />
+								</div>
+							</div>
+						</div>
+						<div class="input-group">
+							
+						</div>
+
+						<a href="frgt-pswd.html" id="fp"> Forgot Password</a>
+
+					   <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Not Register
+                          <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                               <li><a href="std-reg.html">Student</a></li>
+                               <li><a href="ajent-reg.html">Agent</a></li>
+
+                           </ul>
+                       </div><br>
+						
+										
+                        <div style="color: red;">  
+                          <label for="login" align="center"></label>
+                        <center> <input type="submit"  id="sub" value="LOGIN" id="lgn"></center>
+                             </div>
+
+                 
+                 		
+
+						
+					</form>
+				</div>
+			</div>
+		</div>
+
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

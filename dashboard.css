@@ -1,0 +1,100 @@
+nav div{
+padding:0px;
+margin:0px;
+}
+nav div{
+height:10px;
+width:100%;
+background-color: purple;
+line-height: 60px;
+color:white;
+}
+nav div{
+  width:250;
+  height: 666px
+  background:purple;
+}
+nav div a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  padding-right: 100px;
+}
+nav div ul li{
+  list-style-type: none;
+  display: block;
+  padding: 15px;
+  border-bottom:1px solid purple;
+}
+nav div ul li :hover{
+  background: white;
+  transition:linear all 0.40s;
+  margin-left: 10px;
+
+}
+nav div ul li a : hover{
+  color: black;
+
+}
+.selected{
+  background: white;
+}
+.selected a{
+  color: black;
+}
+
+
+
+.sidenav {
+    height: 430px;
+    width: 191px;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    left: 0;
+    background-color: purple;
+    overflow-x: hidden;
+    padding-top: 0px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    text-align: left;
+}
+
+.sidenav  a:hover {
+    color: blue;
+    background: white;
+  transition:linear all 0.40s;
+  margin-left: 10px;
+}
+
+
+
+
+.btn {
+	font-size: 18px;
+	color: #fff;
+	padding: 12px 22px;
+	background-color: red;
+	border: 2px solid:#fff;
+}
+@media (max-width: 600px) {
+  .carousal-caption {
+    display: none;
+  }
+}
+
+.card {
+    background:#FFF;
+    border:1px solid purple;
+    border-bottom:3px solid red;
+    padding:0px;
+    margin:15px;
+    overflow:hidden;
+}

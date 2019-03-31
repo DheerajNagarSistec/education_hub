@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+          
+
+      
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+         <!-- Website CSS style -->
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+
+          <!-- Website Font style -->
+  </head>
+  <body>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+          <link rel="stylesheet" href="cust-reg.css">
+          <!-- Google Fonts -->
+    
+          <title>Std-Reg-Form</title>
+
+         
+
+        <div class="jumbotron text-editor" style="background-color: powderblue">
+
+                
+
+            <h1 style="color:darkblue" align="center"><img src="img/logo.png" id= img> Education-HUB</h1>
+
+            <p style="color: black"><marquee><strong></strong><h2>STUDENT REGISTRATION</marquee></p>
+
+      
+        </div>
+
+    
+
+    <div class="container">
+
+      <div class="row main">
+        <div class="main-login main-center">
+          <a href="index.html"><button class="btn btn-success" style="float:;" style="al">Back </button></a>
+        
+          <form class="form-group" method="post" action="std-reg.php">
+            
+            <br><div class="form-group"><!--customer name -->
+              <label for="name" class="cols-sm-2 control-label">Full Name</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="name" class="form-control" name="std-nm" id="name"  placeholder="Enter your Name" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group"><!-- EMAIL -->
+              <label for="email" class="cols-sm-2 control-label"> Email</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                  <input type="Email" class="form-control" name="std-eml" id="email"  placeholder="Enter your Email"  />
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="form-group"> <!-- password -->
+              <label for="password" class="cols-sm-2 control-label">Password</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                  <input type="password" class="form-control" name="std-pswd" id="password"  placeholder="Enter your Password"  />
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="form-control">  <!-- Gender -->
+              <label for="gender" class="cols-sm-2 control-label" >Gender</label>
+                              <div class="cols-sm-10">
+                                <input type="radio" name="std-gender" value="male" checked"> Male
+                                <input type="radio" name="std-gender" value="female"> Female
+                                <input type="radio" name="std-gender" value="other"> Other
+                              </div>
+                            </div><br>
+              
+            
+           <b>Date of birth</b><br><br>
+           <label for="dropdown" id="lb">
+           </label>
+      <select name="year" id="sel">
+       <option>Year</option>
+       <option>1998</option>
+       <option>1999</option>
+       <option>2000</option>
+       <option>2001</option>
+       <option>2002</option>
+       <option>2003</option>
+       <option>2004</option>
+       <option>2005</option>
+       <option>2006</option>
+       <option>2007</option>
+       <option>2008</option>
+       <option>2009</option>
+       <option>2010</option>
+       <option>2011</option>
+       <option>2012</option>
+       <option>2013</option>
+       <option>2014</option>
+       <option>2015</option>
+       <option>2016</option>
+       <option>2017</option>
+       <option>2018</option>
+      </select>
+        
+      
+      <label for="dropdown" id="lb">
+      </label>
+      <select name="month" id="sel" >
+        <option>month</option>
+        <option>01</option>
+        <option>02</option>
+        <option>03</option>
+        <option>04</option>
+        <option>05</option>
+        <option>06</option>
+        <option>07</option>
+        <option>08</option>
+        <option>09</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+      <label for="dropdown" id="lb">
+      </label>
+      <select name="date" id="sel">
+        <option>Date</option>
+        <option>01</option>
+        <option>02</option>
+        <option>03</option>
+        <option>04</option>
+        <option>05</option>
+        <option>06</option>
+        <option>07</option>
+        <option>08</option>
+        <option>09</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+      <br><br>
+
+
+
+
+
+            <div class="form-group">   <!-- address -->
+              <label for="address" class="cols-sm-2 control-label">Address</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class= "glyphicon glyphicon-book" aria-hidden="true"></i></span>
+                  <input type="Address" class="form-control" name="std-add" id="addrs"  placeholder="Enter your Address" />
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="form-group">  <!-- District -->
+              <label for="District" class="cols-sm-2 control-label">District</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-book" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="std-dist" id="dist"  placeholder="Enter your District"   />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" class="data-fv-phone-country"> <!-- mobile number -->
+              <label for="username" class="cols-sm-2 control-label">Phone Number</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="std-no" id="mob"  placeholder="Enter your Phone number"/>
+                </div>
+              </div>
+            </div>
+
+
+
+            
+
+            <div class="form-group " style="color: red;">  <!-- Register -->
+             <label for="Register" align="center"></label>
+                     <input type="submit" class="form-control" id="submit" value="Register">
+             </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below),or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+      #sel {
+             color: black;
+      }
+    </style>
+
+   </body>
+</html>
